@@ -1,3 +1,8 @@
 .breadcrumb {
 	background-color: #dddddd;
 }
+
+.breadcrumb > .active {
+	color: #ff0000;
+	font-weight: bold;
+}

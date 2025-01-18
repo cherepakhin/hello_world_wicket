@@ -41,7 +41,12 @@ public class BootstrapBasePage extends WebPage
 		settings.setHeight(600);
 		link.setPopupSettings(settings);
 		
-		final String packageName = getClass().getPackage().getName();
+		final String packageName = getPackageName();
+//		final String packageName = ".----------------";
 		add(new Label("mainNavigation", Strings.afterLast(packageName, '.')));
+	}
+
+	String getPackageName() {
+		return getClass().getPackage().getName();
 	}
 }
