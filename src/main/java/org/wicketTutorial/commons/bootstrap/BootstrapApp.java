@@ -18,8 +18,7 @@ package org.wicketTutorial.commons.bootstrap;
 
 import org.apache.wicket.protocol.http.WebApplication;
 
-public abstract class BootstrapApp extends WebApplication 
-{
+public abstract class BootstrapApp extends WebApplication {
 
 	@Override
 	protected void init() 

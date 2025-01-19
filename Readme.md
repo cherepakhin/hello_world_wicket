@@ -1,23 +1,25 @@
-### Simple Wicket application
+### Простое Wicket приложение
 
 ````shell
 echo $JAVA_HOME
 /usr/lib/jvm/java-17-openjdk-amd64
 ````
 
-Run:
+Запуск приложения:
 
 ````shell
 mvn jetty:run
 ````
 
-or:
+или:
 
 ````shell
 ./run.sh
 ````
 
-Open in browser [http://127.0.0.1:8080/](http://127.0.0.1:8080/) 
+Открыть в браузере [http://127.0.0.1:8080/](http://127.0.0.1:8080/) 
+
+![main_page](doc/main_page.png)
 
 ### Пример изменения цвета ссылки
 
@@ -38,3 +40,7 @@ a, a:visited, a:hover, a:active {
     color : #FF5500;
 }
 ````
+
+https://www.rsdn.org/article/inet/Wicket.xml
+https://mkyong.com/tutorials/wicket-tutorials/
+https://resources.oreilly.com/examples/9781849511605/-/tree/master?ref_type=heads

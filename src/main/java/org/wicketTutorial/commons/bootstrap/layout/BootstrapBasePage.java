@@ -9,44 +9,39 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.string.Strings;
 import org.wicketTutorial.commons.bootstrap.source.SourcesPage;
 
-public class BootstrapBasePage extends WebPage
-{
-	
-	public BootstrapBasePage() 
-	{
-		super();
-	}
+public class BootstrapBasePage extends WebPage {
 
-	public BootstrapBasePage(IModel<?> model) 
-	{
-		super(model);
-	}
+    public BootstrapBasePage() {
+        super();
+    }
 
-	public BootstrapBasePage(PageParameters parameters) 
-	{
-		super(parameters);
-	}
+    public BootstrapBasePage(IModel<?> model) {
+        super(model);
+    }
 
-	@Override
-	protected void onInitialize() 
-	{
-		super.onInitialize();
-		
-		BookmarkablePageLink<Void> link = new BookmarkablePageLink<Void>("sources",
-			SourcesPage.class, SourcesPage.generatePageParameters(this));
-		add(link);
+    public BootstrapBasePage(PageParameters parameters) {
+        super(parameters);
+    }
 
-		PopupSettings settings = new PopupSettings("sources", PopupSettings.RESIZABLE);
-		settings.setWidth(800);
-		settings.setHeight(600);
-		link.setPopupSettings(settings);
-		
-		final String packageName = getPackageName();
+    @Override
+    protected void onInitialize() {
+        super.onInitialize();
+
+        BookmarkablePageLink<Void> link = new BookmarkablePageLink<Void>("sources",
+                SourcesPage.class, SourcesPage.generatePageParameters(this));
+        add(link);
+
+        PopupSettings settings = new PopupSettings("sources", PopupSettings.RESIZABLE);
+        settings.setWidth(800);
+        settings.setHeight(600);
+        link.setPopupSettings(settings);
+
+        final String packageName = getPackageName();
 //		final String packageName = ".----------------";
-		add(new Label("mainNavigation", Strings.afterLast(packageName, '.')));
-	}
+        add(new Label("mainNavigation", Strings.afterLast(packageName, '.')));
+    }
 
-	String getPackageName() {
-		return getClass().getPackage().getName();
-	}
+    String getPackageName() {
+        return getClass().getPackage().getName();
+    }
 }
