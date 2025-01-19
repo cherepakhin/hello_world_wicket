@@ -41,6 +41,8 @@ a, a:visited, a:hover, a:active {
 }
 ````
 
-https://www.rsdn.org/article/inet/Wicket.xml
-https://mkyong.com/tutorials/wicket-tutorials/
-https://resources.oreilly.com/examples/9781849511605/-/tree/master?ref_type=heads
+Ссылки:
+
+- [Разработка Web-приложений с использованием Wicket(rsdn.ru)](https://www.rsdn.org/article/inet/Wicket.xml)
+- [Wicket Tutorial (mkyong)](https://mkyong.com/tutorials/wicket-tutorials/)
+- [Примеры из книги Apache Wicket Cookbook](https://resources.oreilly.com/examples/9781849511605/-/tree/master?ref_type=heads)
