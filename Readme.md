@@ -1,9 +1,6 @@
 ### Простое Wicket приложение
 
-````shell
-echo $JAVA_HOME
-/usr/lib/jvm/java-17-openjdk-amd64
-````
+В проекте Spring Boot __НЕ ИСПОЛЬЗУЕТСЯ__.
 
 Запуск приложения:
 
