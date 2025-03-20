@@ -1,2 +1,2 @@
 mvn clean package
-mvn jetty:run
+mvn jetty:run -DscanIntervalSeconds=2
