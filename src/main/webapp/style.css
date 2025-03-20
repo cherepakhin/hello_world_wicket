@@ -6,7 +6,7 @@ body { margin:0;padding:0;}
 	height : 87px;
 	background-color : #092E67;
 	margin-top : 0;
-	padding-top : 0px;
+	padding-top : 10px;
 	border-bottom : 1px solid #888;
 	z-index : 0;
 }
