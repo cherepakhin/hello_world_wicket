@@ -8,5 +8,14 @@
 }
 
 body {
-    padding-top: 0;
+    margin: 10;
+    padding: 0;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: gray;
+    right: 0.1%;
 }
