@@ -21,6 +21,6 @@ import org.apache.wicket.markup.html.basic.Label;
 
 public class HomePage extends BootstrapBasePage {
 	public HomePage() {		
-		add(new Label("helloMessage", "Hello WicketWorld 14!"));
+		add(new Label("helloMessage", "Label id='helloMessage' (HomePage.java)"));
     }
 }

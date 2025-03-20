@@ -24,7 +24,6 @@ public abstract class BootstrapApp extends WebApplication {
 	protected void init() 
 	{
 		BootstrapInitializer.init(this);
-		
 		getCspSettings().blocking().clear();
 	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:wicket="http://www.w3.org/1999/xhtml">
 <head>
 	<wicket:header-items />
 	<wicket:link>
@@ -34,9 +34,10 @@
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
 					aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
@@ -49,13 +50,13 @@
 					</wicket:link>   
 		        </a>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a wicket:id="sources"><i
-							class="glyphicon glyphicon-search"></i> Source</a></li>
+<!--					<li class="dropdown"><a wicket:id="sources"><i-->
+<!--							class="glyphicon glyphicon-search"></i> Source</a></li>-->
 				</ul>
+
 			</div>
 		</div>
 	</nav>
-	<br />
 	<ul class="breadcrumb container">
 		<li><a href="/">Home</a></li>
 		<li class="active" wicket:id="mainNavigation">Data</li>
@@ -65,20 +66,24 @@
 			<wicket:child />
 		</div>
 	</div>
+	<h1 wicket:id="baseMessage"></h1>
 	<footer class="footer">
 		<div class="container">
-			
-			<p>
-				Designed and built on top of <a href="http://wb-mgrigorov.rhcloud.com/" target="_blank">
-				Wicket-Bootstrap project.</a>
-				Apache Wicket licensed under the <a
-					href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache
-					License v2.0</a>. Twitter Bootstrap licensed under the <a
-					href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache
-					License v2.0</a>. Icons from <a href="http://glyphicons.com">Glyphicons
-					Free</a>, licensed under <a
-					href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-			</p>
+			Designed and built on top of <a href="http://wb-mgrigorov.rhcloud.com/" target="_blank">
+			Wicket-Bootstrap project.</a>
+
+<!--			<p>-->
+<!--				Designed and built on top of <a href="http://wb-mgrigorov.rhcloud.com/" target="_blank">-->
+<!--				Wicket-Bootstrap project.</a>-->
+<!--				Apache Wicket licensed under the -->
+<!--				<a-->
+<!--					href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache-->
+<!--					License v2.0</a>. Twitter Bootstrap licensed under the <a-->
+<!--					href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache-->
+<!--					License v2.0</a>. Icons from <a href="http:	//glyphicons.com">Glyphicons-->
+<!--					Free</a>, licensed under <a-->
+<!--					href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.-->
+<!--			</p>-->
 			<ul class="footer-links">
 				<li>
 					<a target="_blank" href="http://wicket.apache.org">Wicket Site</a>
